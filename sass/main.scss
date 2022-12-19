@@ -1,0 +1,21 @@
+// Utis
+@import "./utils/mixins";
+@import "./utils/variables";
+
+// Base
+@import "./base/resets";
+
+// Components
+@import "./components/container";
+@import "./components/section";
+@import "./components/section-title";
+
+// Loyout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/strategy";
+@import "./layout/products";
+@import "./layout/services";
+@import "./layout/markets";
+@import "./layout/footer";

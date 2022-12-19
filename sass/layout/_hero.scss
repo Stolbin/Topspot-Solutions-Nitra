@@ -1,0 +1,79 @@
+.hero {
+  padding: 100px 30px 50px 30px;
+  @include table {
+    padding: 200px 30px 0px 30px;
+  }
+  @include desktop {
+    padding: 250px 30px 0px 30px;
+  }
+}
+
+.hero_box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  @include table {
+    gap: 42px;
+  }
+  @include desktop {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.upperTitel {
+  width: 100%;
+  font-size: 40px;
+  line-height: calc(56 / 40);
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 80px;
+  @include table {
+    font-size: 50px;
+    line-height: calc(60 / 50);
+    margin-bottom: 120px;
+  }
+  @include desktop {
+    font-size: 64px;
+    line-height: calc(80 / 64);
+    margin-bottom: 180px;
+  }
+}
+
+.hero-logo {
+  width: 200px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  @include table {
+    width: 300px;
+    height: auto;
+  }
+  @include desktop {
+    width: 380px;
+    height: auto;
+  }
+}
+
+.hero-text {
+  flex-grow: 2;
+  max-width: 760px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  margin-top: 40px;
+  color: #ffffff;
+  text-align: left;
+  @include table {
+    padding-left: 20px;
+    font-size: 30px;
+    line-height: calc(36 / 30);
+  }
+  @include desktop {
+    text-align: left;
+    font-size: 38px;
+    line-height: calc(49 / 40);
+  }
+}

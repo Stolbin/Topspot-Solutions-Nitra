@@ -1,0 +1,17 @@
+.section-title {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: calc(43 / 38);
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-align: center;
+  @include table {
+    font-size: 58px;
+    line-height: calc(62 / 58);
+  }
+  @include desktop {
+    font-size: 64px;
+    line-height: calc(78 / 64);
+    margin-bottom: 90px;
+  }
+}

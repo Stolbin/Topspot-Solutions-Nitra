@@ -1,0 +1,237 @@
+.footer {
+  padding: 100px 30px 50px 30px;
+  @include desktop {
+    padding: 150px 30px 100px 30px;
+  }
+}
+
+.footer-titel {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: calc(43 / 38);
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-align: center;
+  @include table {
+    font-size: 58px;
+    line-height: calc(62 / 58);
+  }
+  @include desktop {
+    font-size: 64px;
+    line-height: calc(78 / 64);
+    margin-bottom: 90px;
+  }
+}
+
+.footer-box {
+  @include desktop {
+    padding: 0px 20px;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+}
+
+.footer-form {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 435px;
+  padding: 15px;
+  background: #d9d9d9;
+  border-radius: 20px;
+  @include table {
+    max-width: 535px;
+    padding: 30px;
+  }
+  @include desktop {
+    margin-right: 0;
+    margin-left: 0;
+    gap: 35px;
+  }
+}
+
+.inputs-list-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  @include table {
+    gap: 20px;
+  }
+  @include desktop {
+    gap: 28px;
+  }
+}
+
+.inputs-list-top,
+.inputs-list-bott {
+  max-width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  @include table {
+    gap: 20px;
+  }
+  @include desktop {
+    gap: 28px;
+  }
+}
+
+.input-form-footer {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  background-color: #ffffff;
+  transition: background-color 0.5s ease 0s, box-shadow 0.5s ease 0s;
+  @include table {
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+  }
+  @include desktop {
+    height: 55px;
+  }
+  &:focus {
+    background-color: #fbf6f6;
+    box-shadow: 0px 0px 10px rgb(105, 168, 89);
+  }
+}
+
+.input-form-footer._error {
+  box-shadow: 0px 0px 10px rgb(170, 6, 6);
+}
+
+.label-title-footer-form {
+  width: 100%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  align-items: left;
+  color: #000000;
+  padding-left: 5px;
+  @include table {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+}
+
+.textarea-form-footer {
+  padding: 15px;
+  width: 100%;
+  height: 150px;
+  margin-top: 15px;
+  resize: none;
+  background: #ffffff;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 8px;
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  transition: background-color 0.5s ease 0s, box-shadow 0.5s ease 0s;
+  transition: box-shadow 0.5s ease 0s, box-shadow 0.5s ease 0s;
+  @include table {
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+  }
+  @include desktop {
+    height: 210px;
+  }
+  &:focus {
+    background-color: #fbf6f6;
+    box-shadow: 0px 0px 10px rgb(105, 168, 89);
+  }
+}
+
+.address-footer {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+  @include table {
+    margin-bottom: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  @include desktop {
+  }
+}
+
+.footer-contacts-text,
+.footer-contacts-mail {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  color: #ffffff;
+  margin-bottom: 30px;
+  @include table {
+    font-size: 40px;
+    line-height: calc(49 / 40);
+  }
+}
+
+.footer-contacts-mail:hover,
+.footer-contacts-mail:focus {
+  color: antiquewhite;
+}
+
+.btn-footer-form {
+  display: flex;
+  width: 100%;
+  margin-top: 16px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  color: antiquewhite;
+  background-color: rgb(139, 213, 120);
+  box-shadow: 0px 5px 0px rgb(59, 98, 48);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background-color 0.5s ease 0s;
+  position: relative;
+  top: 0px;
+  @include table {
+    padding: 14px 28px;
+  }
+  @include desktop {
+    margin-top: 30px;
+    padding: 20px 40px;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    border-radius: 20px;
+  }
+  &:hover {
+    background-color: rgb(105, 168, 89);
+  }
+  &:active {
+    top: 3px;
+    background-color: rgb(37, 116, 18);
+    box-shadow: 0px 2px px rgb(59, 98, 48);
+  }
+}
