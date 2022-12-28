@@ -2,6 +2,7 @@
   position: fixed;
   width: 100%;
   background-color: #000000;
+  border-bottom: 1px solid #ffffff;
 }
 
 .header-box {
@@ -11,7 +12,6 @@
   flex-grow: 1;
   top: 0;
   padding: 10px 20px;
-  border-bottom: 1px solid #ffffff;
   @include table {
     padding: 15px 30px;
   }
