@@ -118,12 +118,7 @@ body {
 .header {
   position: fixed;
   width: 100%;
-}
-@media (min-width: 500px) {
-  .header {
-    width: calc(100% - 100px);
-    margin-left: 50px;
-  }
+  background-color: #000000;
 }
 
 .header-box {
@@ -236,6 +231,11 @@ body {
 @media screen and (min-width: 768px) {
   .header-link {
     width: calc(100% - 10px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-link {
+    width: calc(100% - 15px);
   }
 }
 
