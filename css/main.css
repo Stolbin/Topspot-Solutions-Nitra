@@ -183,7 +183,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header-link {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.3333333333;
     padding-left: 10px;
     padding-bottom: 10px;
@@ -191,7 +191,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header-link {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 1.2083333333;
     padding-bottom: 15px;
   }

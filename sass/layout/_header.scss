@@ -55,13 +55,13 @@
   padding-bottom: 5px;
   // border-right: solid 1px  #7c7878;
   @include table {
-    font-size: 12px;
+    font-size: 18px;
     line-height: calc(16 / 12);
     padding-left: 10px;
     padding-bottom: 10px;
   }
   @include desktop {
-    font-size: 24px;
+    font-size: 26px;
     line-height: calc(29 / 24);
     padding-bottom: 15px;
   }
