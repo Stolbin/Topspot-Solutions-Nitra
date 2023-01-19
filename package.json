@@ -1,0 +1,22 @@
+{
+  "name": "topspot-solutions-nitra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stolbin/Topspot-Solutions-Nitra.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stolbin/Topspot-Solutions-Nitra/issues"
+  },
+  "homepage": "https://github.com/Stolbin/Topspot-Solutions-Nitra#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
