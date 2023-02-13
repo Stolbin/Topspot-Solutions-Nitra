@@ -240,6 +240,8 @@ body {
 }
 
 .link-last {
+  justify-content: center;
+  align-content: center;
   border-right: none;
 }
 
@@ -390,7 +392,7 @@ body {
   font-weight: 400;
   font-size: 38px;
   line-height: 1.1315789474;
-  color: #ffffff;
+  color: #0d1a0f;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -763,13 +765,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .inputs-list-top,
-.inputs-list-bott {
+  .inputs-list-bott {
     gap: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .inputs-list-top,
-.inputs-list-bott {
+  .inputs-list-bott {
     gap: 28px;
   }
 }
@@ -887,7 +889,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer-contacts-text,
-.footer-contacts-mail {
+  .footer-contacts-mail {
     font-size: 40px;
     line-height: 1.225;
   }

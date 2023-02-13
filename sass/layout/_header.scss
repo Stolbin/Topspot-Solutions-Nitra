@@ -92,16 +92,18 @@
   &:hover::after {
     left: 0%;
     width: calc(100% - 5px);
-  }  
+  }
   @include table {
     width: calc(100% - 10px);
-  }  
+  }
   @include desktop {
     width: calc(100% - 15px);
   }
 }
 
 .link-last {
+  justify-content: center;
+  align-content: center;
   border-right: none;
 }
 
@@ -111,7 +113,7 @@
   left: -1px;
   bottom: 40%;
   height: 8px;
-  border-right: 1px solid  #485348;
+  border-right: 1px solid #485348;
   @include table {
     left: -5px;
     height: 12px;
