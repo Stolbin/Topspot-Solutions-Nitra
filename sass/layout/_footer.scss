@@ -1,5 +1,6 @@
 .footer {
   padding: 100px 30px 50px 30px;
+
   @include desktop {
     padding: 150px 30px 100px 30px;
   }
@@ -12,10 +13,12 @@
   color: #ffffff;
   margin-bottom: 40px;
   text-align: center;
+
   @include table {
     font-size: 58px;
     line-height: calc(62 / 58);
   }
+
   @include desktop {
     font-size: 64px;
     line-height: calc(78 / 64);
@@ -41,10 +44,12 @@
   padding: 15px;
   background: #d9d9d9;
   border-radius: 20px;
+
   @include table {
     max-width: 535px;
     padding: 30px;
   }
+
   @include desktop {
     margin-right: 0;
     margin-left: 0;
@@ -59,9 +64,11 @@
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
+
   @include table {
     gap: 20px;
   }
+
   @include desktop {
     gap: 28px;
   }
@@ -74,9 +81,11 @@
   gap: 10px;
   justify-content: center;
   align-content: center;
+
   @include table {
     gap: 20px;
   }
+
   @include desktop {
     gap: 28px;
   }
@@ -95,6 +104,7 @@
   line-height: calc(14 / 12);
   background-color: #ffffff;
   transition: background-color 0.5s ease 0s, box-shadow 0.5s ease 0s;
+
   @include table {
     height: 40px;
     padding-left: 15px;
@@ -103,9 +113,11 @@
     font-size: 16px;
     line-height: calc(22 / 16);
   }
+
   @include desktop {
     height: 55px;
   }
+
   &:focus {
     background-color: #fbf6f6;
     box-shadow: 0px 0px 10px rgb(105, 168, 89);
@@ -124,6 +136,7 @@
   align-items: left;
   color: #000000;
   padding-left: 5px;
+
   @include table {
     font-size: 20px;
     line-height: calc(24 / 20);
@@ -147,6 +160,7 @@
   line-height: calc(14 / 12);
   transition: background-color 0.5s ease 0s, box-shadow 0.5s ease 0s;
   transition: box-shadow 0.5s ease 0s, box-shadow 0.5s ease 0s;
+
   @include table {
     padding: 20px;
     border-radius: 20px;
@@ -154,9 +168,11 @@
     font-size: 16px;
     line-height: calc(22 / 16);
   }
+
   @include desktop {
     height: 210px;
   }
+
   &:focus {
     background-color: #fbf6f6;
     box-shadow: 0px 0px 10px rgb(105, 168, 89);
@@ -167,13 +183,14 @@
   justify-content: center;
   text-align: center;
   margin-bottom: 40px;
+
   @include table {
     margin-bottom: 100px;
     margin-left: 0px;
     margin-right: 0px;
   }
-  @include desktop {
-  }
+
+  @include desktop {}
 }
 
 .footer-contacts-text,
@@ -183,6 +200,7 @@
   line-height: calc(24 / 18);
   color: #ffffff;
   margin-bottom: 30px;
+
   @include table {
     font-size: 40px;
     line-height: calc(49 / 40);
@@ -203,8 +221,8 @@
   justify-content: center;
   padding: 10px 20px;
   color: antiquewhite;
-  background-color: rgb(139, 213, 120);
-  box-shadow: 0px 5px 0px rgb(59, 98, 48);
+  background-color: rgb(110, 187, 91);
+  box-shadow: 1px 3px 1px rgb(59, 98, 48);
   border-radius: 10px;
   border: none;
   outline: none;
@@ -216,9 +234,11 @@
   transition: background-color 0.5s ease 0s;
   position: relative;
   top: 0px;
+
   @include table {
     padding: 14px 28px;
   }
+
   @include desktop {
     margin-top: 30px;
     padding: 20px 40px;
@@ -226,12 +246,13 @@
     line-height: calc(24 / 20);
     border-radius: 20px;
   }
+
   &:hover {
-    background-color: rgb(105, 168, 89);
+    background-color: rgb(94, 161, 77);
   }
+
   &:active {
     top: 3px;
     background-color: rgb(37, 116, 18);
-    box-shadow: 0px 2px px rgb(59, 98, 48);
   }
 }

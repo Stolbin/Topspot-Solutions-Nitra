@@ -2,10 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=0">
-    <meta name="description" content="Esport Consulting Agency">
-    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=0"
+    />
+    <meta name="description" content="Esport Consulting Agency" />
+    <meta name="robots" content="index, follow" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +22,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="shortcut icon" href="/imags/icon_topspot-solutions_180x180.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="/imags/icon_topspot-solutions_180x180.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>TopSpot.Solutions</title>
   </head>
@@ -37,27 +44,27 @@
         </a>
         <div class="navigation">
           <nav class="menu"></nav>
-            <ul class="navigation-list">
-              <li class="menu-item _active">
-                <a class="header-link link" href="#home">Home</a>
-              </li>
-              <li class="menu-item">
-                <a class="header-link link border" href="#about">About</a>
-              </li>
-              <li class="menu-item">
-                <a class="header-link link border" href="#products">Our products</a>
-              </li>
-              <li class="menu-item">
-                <a class="header-link link border" href="#markets">We operate</a>
-              </li>
-              <li>
-                <a class="header-link header-link-last link border" href="#footer"
-                  >Contacts</a
-                >
-              </li>
-            </ul>
-            <!-- <div class="menu__active"><span class="menu__active_span"></span></div> -->
-          </nav>
+          <ul class="navigation-list">
+            <li class="menu-item _active">
+              <a class="header-link link" href="#home">Home</a>
+            </li>
+            <li class="menu-item">
+              <a class="header-link link border" href="#about">About</a>
+            </li>
+            <li class="menu-item">
+              <a class="header-link link border" href="#products"
+                >Our products</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="header-link link border" href="#markets">We operate</a>
+            </li>
+            <li>
+              <a class="header-link header-link-last link border" href="#footer"
+                >Contacts</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -236,7 +243,7 @@
 
         <!-- Form -->
 
-        <!-- <form action="#" method="post" id="form" class="footer-form">
+        <form action="#" method="post" id="form" class="footer-form">
           <div class="inputs-list-form">
             <div class="inputs-list-top">
               <div class="inputs-item-form">
@@ -246,8 +253,10 @@
                 <input
                   id="name"
                   type="name"
-                  class="input-form-footer _req"
                   name="name"
+                  maxlength="25"
+                  required
+                  class="input-form-footer _req"
                 />
               </div>
               <div class="inputs-item-form">
@@ -257,8 +266,9 @@
                 <input
                   id="email"
                   type="email"
-                  class="input-form-footer _req _email"
                   name="email"
+                  required
+                  class="input-form-footer _req _email"
                 />
               </div>
             </div>
@@ -270,8 +280,9 @@
                 <input
                   id="tel"
                   type="tel"
-                  class="input-form-footer _req"
                   name="phone"
+                  required
+                  class="input-form-footer _req"
                 />
               </div>
               <div class="inputs-item-form">
@@ -281,8 +292,9 @@
                 <input
                   id="subject"
                   type="subject"
-                  class="input-form-footer"
                   name="subject"
+                  required
+                  class="input-form-footer"
                 />
               </div>
             </div>
@@ -297,14 +309,13 @@
               name="comments"
               id="comments"
               class="textarea-form-footer"
-              placeholder="enter text"
+              placeholder="Enter your text"
             ></textarea>
           </div>
           <button type="submit" class="btn-footer-form">send</button>
-        </form> -->
+        </form>
       </div>
     </footer>
-    <!-- <script type="module" src="./js/form.js"></script> -->
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -314,6 +325,7 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script type="module" src="./js/anchor.js"></script>
-    <!-- <script type="module" src="./js/active_border.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/form.js"></script>
   </body>
 </html>
