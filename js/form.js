@@ -15,12 +15,13 @@ function handkerSubmit(e) {
   message += `<b>Subject: </b> ${this.subject.value}\n`;
   message += `<b>Somments: </b> ${this.comments.value}\n`;
 
-  axios
-    .post(URL_API, {
-      chat_id: CHAT_ID,
-      parse_mode: "html",
-      text: message,
-    })
+  axios.post(URL_API, {
+    chat_id: CHAT_ID,
+    parse_mode: "html",
+    text: message,
+  });
+  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+  delay(1000)
     .then((res) => {
       this.name.value = "";
       this.email.value = "";
@@ -29,8 +30,8 @@ function handkerSubmit(e) {
       this.comments.value = "";
       seccess.style.display = "block";
     })
-    .catch((err) => {
-      console.wrm("err");
+    .catch(() => {
+      console.log("Error");
     })
     .finally(() => {
       console.log("End");
