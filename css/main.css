@@ -684,7 +684,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    padding: 150px 30px 100px 30px;
+    padding: 150px 30px;
   }
 }
 
@@ -726,6 +726,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
   max-width: 435px;
   padding: 15px;
   background: #d9d9d9;
@@ -734,14 +735,7 @@ body {
 @media screen and (min-width: 768px) {
   .footer-form {
     max-width: 535px;
-    padding: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-form {
-    margin-right: 0;
-    margin-left: 0;
-    gap: 35px;
+    padding: 20px;
   }
 }
 
@@ -751,17 +745,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 15px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
   .inputs-list-form {
     gap: 20px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .inputs-list-form {
-    gap: 28px;
   }
 }
 
@@ -779,16 +768,20 @@ body {
     gap: 20px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .inputs-list-top,
-  .inputs-list-bott {
-    gap: 28px;
-  }
-}
 
 .inputs-item-form,
 .textarea-item-form {
   position: relative;
+  width: 100%;
+}
+
+.textarea-item-form {
+  margin-top: 5px;
+}
+@media screen and (min-width: 768px) {
+  .textarea-item-form {
+    margin-top: 10px;
+  }
 }
 
 .input_form {
@@ -819,14 +812,6 @@ body {
   .input_form {
     height: 55px;
   }
-}
-.input_form:focus {
-  background-color: #fbf6f6;
-  box-shadow: 0px 0px 10px rgb(105, 168, 89);
-}
-
-.input-form-footer._error {
-  box-shadow: 0px 0px 10px rgb(170, 6, 6);
 }
 
 .label_title {
@@ -896,6 +881,7 @@ body {
     margin-right: 0px;
   }
 }
+
 .footer-contacts-text,
 .footer-contacts-mail {
   font-weight: 400;
@@ -920,12 +906,12 @@ body {
 .btn-footer-form {
   position: relative;
   top: 0px;
-  width: 100%;
+  width: 70%;
   display: flex;
-  margin-top: 16px;
   text-align: center;
   justify-content: center;
   padding: 10px 20px;
+  margin: 0 auto 0 auto;
   color: antiquewhite;
   background-color: rgb(110, 187, 91);
   border-radius: 10px;
@@ -939,14 +925,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .btn-footer-form {
-    width: 100%;
     padding: 14px 28px;
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .btn-footer-form {
-    width: 100%;
-    margin-top: 30px;
     padding: 20px 40px;
     font-size: 20px;
     line-height: 1.2;

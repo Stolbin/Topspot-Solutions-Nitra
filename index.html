@@ -266,7 +266,7 @@
                   name="name"
                   maxlength="25"
                   required
-                  class="input_form _req"
+                  class="input_form"
                 />
               </div>
               <div class="inputs-item-form">
@@ -276,7 +276,7 @@
                   type="email"
                   name="email"
                   required
-                  class="input_form _req _email"
+                  class="input_form _email"
                 />
               </div>
             </div>
@@ -286,9 +286,10 @@
                 <input
                   id="tel"
                   type="tel"
-                  name="phone"
+                  name="tel"
                   required
-                  class="input_form _req"
+                  pattern="[0-9]{10}"
+                  class="input_form"
                 />
               </div>
               <div class="inputs-item-form">

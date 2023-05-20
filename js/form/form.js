@@ -3,6 +3,7 @@ const CHAT_ID = "-1001848182059";
 const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 const seccess = document.getElementById("succese");
 const form = document.getElementById("form");
+
 form.addEventListener("submit", handkerSubmit);
 
 function handkerSubmit(e) {
@@ -11,7 +12,7 @@ function handkerSubmit(e) {
   let message = `<b>Заявка с сайта</b>\n`;
   message += `<b>User: </b> ${this.name.value}\n`;
   message += `<b>Email: </b> ${this.email.value}\n`;
-  message += `<b>Phone: </b> ${this.phone.value}\n`;
+  message += `<b>Phone: </b> ${this.tel.value}\n`;
   message += `<b>Subject: </b> ${this.subject.value}\n`;
   message += `<b>Somments: </b> ${this.comments.value}\n`;
 
