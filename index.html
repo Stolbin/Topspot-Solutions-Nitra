@@ -72,7 +72,7 @@
         </div>
       </div>
     </header>
-
+    <div id="progress-bar" class="progress-bar"></div>
     <!-- MAIN CONTENT -->
 
     <main>
@@ -258,12 +258,13 @@
             <div class="inputs-list-top">
               <div class="inputs-item-form">
                 <label for="name"
-                  ><span class="label-title-footer-form">Name</span></label
+                  ><span class="label-title-footer-form">Your Name</span></label
                 >
                 <input
                   id="name"
                   type="name"
                   name="name"
+                  oninput="handleChange"
                   maxlength="25"
                   required
                   class="input-form-footer _req"
@@ -322,7 +323,9 @@
               placeholder="Enter your text"
             ></textarea>
           </div>
-          <button type="submit" class="btn-footer-form">send</button>
+          <button type="submit" class="btn-footer-form">
+            send
+          </button>
         </form>
       </div>
     </footer>
@@ -334,9 +337,10 @@
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
+    <script src="./js/index.js"></script>
     <script type="module" src="./js/anchor.js"></script>
-    <script type="module" src="./js/form.js"></script>
+    <!-- <script type="module" src="./js/form.js"></script>
+    <script type="module" src="./js/progressBorder.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    ;
   </body>
 </html>

@@ -115,6 +115,13 @@ body {
   }
 }
 
+.progress-bar {
+  width: 0%;
+  height: 8px;
+  position: fixed;
+  background-color: #fff;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -902,27 +909,24 @@ body {
 }
 
 .btn-footer-form {
+  position: relative;
+  top: 0px;
   display: flex;
   width: 100%;
   margin-top: 16px;
   text-align: center;
-  align-items: center;
   justify-content: center;
   padding: 10px 20px;
   color: antiquewhite;
   background-color: rgb(110, 187, 91);
-  box-shadow: 1px 3px 1px rgb(59, 98, 48);
   border-radius: 10px;
-  border: none;
-  outline: none;
+  border: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2857142857;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: background-color 0.5s ease 0s;
-  position: relative;
-  top: 0px;
 }
 @media screen and (min-width: 768px) {
   .btn-footer-form {
@@ -938,12 +942,15 @@ body {
     border-radius: 20px;
   }
 }
-.btn-footer-form:hover {
+.btn-footer-form:is(:hover, :focus) {
   background-color: rgb(94, 161, 77);
+  outline: 3px solid rgb(94, 161, 77);
+  outline-offset: 3px;
 }
 .btn-footer-form:active {
   top: 3px;
   background-color: rgb(37, 116, 18);
+  outline: 3px solid rgb(37, 116, 18);
 }
 
 .success {
