@@ -1,2 +1,3 @@
-import handkerSubmit from "./form";
-import scroll from "./progressBorder";
+import "./anchor/anchor.js";
+import "./form/form.js";
+import "./progressDorder/progressBorder.js";
