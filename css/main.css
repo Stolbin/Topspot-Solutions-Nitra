@@ -1004,7 +1004,8 @@ body {
   outline: 3px solid rgb(37, 116, 18);
 }
 
-.success {
+.succese {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1019,13 +1020,13 @@ body {
   z-index: 9999;
 }
 @media screen and (min-width: 768px) {
-  .success {
+  .succese {
     padding-top: 30%;
     border-radius: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .success {
+  .succese {
     padding-top: 45%;
   }
 }

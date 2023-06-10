@@ -1,7 +1,7 @@
 const TOKEN = "6295958096:AAEpfHzcgg2SVWGo2JBxrJWnJYimDvgP9hY";
 const CHAT_ID = "-1001848182059";
 const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-const seccess = document.getElementById("succese");
+const succese = document.getElementById("succese");
 const form = document.getElementById("form");
 // const inputForm = document.querySelector(".input_form");
 form.addEventListener("submit", handkerSubmit);
@@ -26,10 +26,10 @@ function handkerSubmit(e) {
     .then((res) => {
       this.name.value = "";
       this.email.value = "";
-      this.phone.value = "";
+      this.tel.value = "";
       this.subject.value = "";
       this.comments.value = "";
-      seccess.style.display = "block";
+      succese.style.display = "block";
     })
     .catch(() => {
       console.log("Error");
