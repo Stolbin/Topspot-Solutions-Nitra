@@ -787,6 +787,11 @@ body {
   padding: 15px;
   background: #d9d9d9;
   border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.footer-form_submit {
+  transform: rotateY(180deg);
 }
 @media screen and (min-width: 768px) {
   .footer-form {
@@ -1009,7 +1014,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(-1, 1);
   padding: 40% 10% 5% 10%;
   text-align: center;
   border-radius: 10px;
@@ -1057,4 +1062,8 @@ body {
   .succese_title {
     font-size: 1.5rem;
   }
+}
+
+.formElemts {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
