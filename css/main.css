@@ -1023,6 +1023,8 @@ body {
   background: #d9d9d9;
   display: none;
   z-index: 9999;
+  border: none;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.5);
 }
 @media screen and (min-width: 768px) {
   .succese {
@@ -1034,6 +1036,10 @@ body {
   .succese {
     padding-top: 45%;
   }
+}
+
+.succese_content {
+  display: none;
 }
 
 .fa {
@@ -1062,8 +1068,4 @@ body {
   .succese_title {
     font-size: 1.5rem;
   }
-}
-
-.formElemts {
-  display: none;
 }/*# sourceMappingURL=main.css.map */
