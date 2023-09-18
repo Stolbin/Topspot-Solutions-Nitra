@@ -2,8 +2,10 @@ const scrollTop = document.getElementById("scrolltop");
 
 window.onscroll = () => {
   if (window.scrollY > 100) {
-    scrollTop.style.display = "block";
+    scrollTop.style.opacity = "1";
+    scrollTop.style.transition = "opacity 0.5s ease";
   } else {
-    scrollTop.style.display = "none";
+    scrollTop.style.opacity = "0";
+    scrollTop.style.transition = "opacity 0.5s ease";
   }
 };
