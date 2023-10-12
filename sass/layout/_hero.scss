@@ -45,7 +45,8 @@
   }
 }
 
-.hero-logo {
+.hero-logo_box {
+  position: relative;
   width: 200px;
   height: auto;
   margin-right: auto;
@@ -59,6 +60,26 @@
   @include desktop {
     width: 380px;
     height: auto;
+  }
+}
+
+.hero-logo {
+  position: absolute;
+  animation: showHeroLogo 900ms cubic-bezier(0.8, 0.9, 0.6, 1.1) forwards;
+
+  @keyframes showHeroLogo {
+    0% {
+      top: 50%;
+      left: -300%;
+      transform: translate(-50%, -50%);
+    }
+
+    100% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
   }
 }
 
