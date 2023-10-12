@@ -5,6 +5,7 @@
   background-color: #000000;
   border-bottom: 1px solid #ffffff;
   animation: showHeader 900ms ease-in-out forwards;
+  z-index: 9999;
 }
 
 @keyframes showHeader {
