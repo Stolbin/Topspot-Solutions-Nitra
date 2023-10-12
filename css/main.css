@@ -209,8 +209,30 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-grow: 1;
+  opacity: 0;
   top: 0;
   padding: 10px 20px;
+  animation: showLogo 900ms ease-in-out 500ms forwards;
+}
+@media (max-width: 351px) {
+  .header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    opacity: 0;
+    top: 0;
+    padding: 10px 10px;
+    animation: showLogo 900ms ease-in-out 400ms forwards;
+  }
+}
+@keyframes showLogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media screen and (min-width: 768px) {
   .header-box {
@@ -221,11 +243,25 @@ body {
   .header-box {
     padding: 20px 40px;
   }
+  @keyframes showLogo {
+    0% {
+      gap: 150px;
+      opacity: 0;
+    }
+    100% {
+      gap: 0;
+      opacity: 1;
+    }
+  }
 }
 
 .header-logo {
   width: 80px;
-  animation: showLogo 900ms ease-in-out forwards;
+}
+@media (max-width: 351px) {
+  .header-logo {
+    width: 65px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header-logo {
@@ -237,13 +273,6 @@ body {
     width: 160px;
   }
 }
-@media screen and (min-width: 768px) {
-  @keyframes showLogo {
-    0% {
-      margin-right: 150px;
-    }
-  }
-}
 
 .navigation-list {
   display: flex;
@@ -252,7 +281,6 @@ body {
   align-items: center;
   justify-content: right;
   text-align: center;
-  margin-left: 20px;
   gap: 0px 5px;
 }
 @media screen and (min-width: 768px) {
@@ -376,10 +404,13 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .hero_box {
     gap: 42px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -412,14 +443,14 @@ body {
 
 .hero-logo_box {
   position: relative;
-  width: 200px;
+  width: 150px;
   height: auto;
   margin-right: auto;
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .hero-logo_box {
-    width: 300px;
+    width: 250px;
     height: auto;
   }
 }
@@ -437,13 +468,31 @@ body {
 @keyframes showHeroLogo {
   0% {
     top: 50%;
-    left: -300%;
+    left: -50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
   }
   100% {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  @keyframes showHeroLogo {
+    0% {
+      top: 50%;
+      left: -200%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+    100% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
   }
 }
 
