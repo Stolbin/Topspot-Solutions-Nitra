@@ -214,10 +214,12 @@ body {
 @keyframes showHeader {
   0% {
     top: -100px;
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
     position: fixed;
+    opacity: 1;
   }
 }
 .header-box {
@@ -225,7 +227,7 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-grow: 1;
-  opacity: 0;
+  opacity: 1;
   top: 0;
   padding: 10px 20px;
   animation: showLogo 900ms ease-in-out forwards;
