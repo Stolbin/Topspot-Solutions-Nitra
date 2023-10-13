@@ -3,7 +3,7 @@
     bottom: 10px;
     right: 10px;
     background-color: rgba(157, 210, 25, 0.3);
-    border-radius: 20%;
+    border-radius: 50px;
     opacity: 0;
     transition: opacity 0.5s ease;
 
@@ -32,6 +32,10 @@
     cursor: pointer;
     padding: 10px;
 
+    &:hover>.bi {
+        color: #320404;
+    }
+
     @include table {
         padding: 15px;
     }
@@ -57,4 +61,6 @@
         width: 30px;
         height: 30px;
     }
+
+
 }

@@ -38,17 +38,7 @@
   opacity: 0;
   top: 0;
   padding: 10px 20px;
-  animation: showLogo 900ms ease-in-out 500ms forwards;
-
-  @keyframes showLogo {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
+  animation: showLogo 900ms ease-in-out forwards;
 
   @include table {
     padding: 15px 30px;
