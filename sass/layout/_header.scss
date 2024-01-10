@@ -30,7 +30,7 @@
     opacity: 0;
     top: 0;
     padding: 10px 10px;
-    animation: showLogo 900ms ease-in-out 500ms forwards;
+    animation: showLogo 900ms ease-in-out 800ms forwards;
   }
 
   display: flex;
@@ -40,7 +40,7 @@
   opacity: 0;
   top: 0;
   padding: 10px 20px;
-  animation: showLogo 900ms ease-in-out 500ms forwards;
+  animation: showLogo 900ms ease-in-out 800ms forwards;
 
   @include table {
     padding: 15px 30px;
