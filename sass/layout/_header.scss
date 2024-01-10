@@ -10,7 +10,7 @@
 
 @keyframes showHeader {
   0% {
-    top: -100px;
+    top: -200px;
     opacity: 0;
   }
 
@@ -125,7 +125,10 @@
 
   &:hover,
   &:focus {
-    color: antiquewhite;
+    color: #faebd7;
+    text-shadow: 0px 0px 20px #e9e6e2,
+      0px 0px 30px #e9e6e2,
+      0px 0px 40px #e9e6e2;
   }
 
   &::after {

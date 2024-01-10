@@ -33,7 +33,7 @@ function handkerSubmit(e) {
     succese.style.display = "block";
   });
   const delay2 = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-  delay2(1800)
+  delay2(1500)
     .then((res) => {
       succeseContent.style.display = "block";
     })

@@ -21,7 +21,7 @@ $('a[href*="#about"]').click(function () {
 });
 
 var $page = $("html, body");
-$('a[href*="#product"]').click(function () {
+$('a[href*="#products"]').click(function () {
   $page.animate(
     {
       scrollTop: $($.attr(this, "href")).offset().top,

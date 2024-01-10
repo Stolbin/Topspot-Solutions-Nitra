@@ -51,7 +51,7 @@
   transition: transform 0.5s ease;
 
   &_submit {
-    transform: rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
   }
 
   @include table {
@@ -162,7 +162,6 @@
   font-size: 12px;
   line-height: calc(14 / 12);
   transition: background-color 0.5s ease 0s, box-shadow 0.5s ease 0s;
-  transition: box-shadow 0.5s ease 0s, box-shadow 0.5s ease 0s;
 
   @include table {
     width: 100%;
@@ -272,8 +271,9 @@
   width: 100%;
   height: 100%;
   background: #d9d9d9;
-  display: none;
+  overflow: hidden;
   z-index: 1000;
+  backface-visibility: hidden;
   border: none;
   box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.5);
 

@@ -213,7 +213,7 @@ body {
 
 @keyframes showHeader {
   0% {
-    top: -100px;
+    top: -200px;
     opacity: 0;
   }
   100% {
@@ -329,7 +329,8 @@ body {
   display: block;
 }
 .header-link:hover, .header-link:focus {
-  color: antiquewhite;
+  color: #faebd7;
+  text-shadow: 0px 0px 20px #e9e6e2, 0px 0px 30px #e9e6e2, 0px 0px 40px #e9e6e2;
 }
 .header-link::after {
   position: absolute;
@@ -892,7 +893,7 @@ body {
   transition: transform 0.5s ease;
 }
 .footer-form_submit {
-  transform: rotateY(180deg);
+  transform: perspective(600px) rotateY(180deg);
 }
 @media screen and (min-width: 768px) {
   .footer-form {
@@ -1008,7 +1009,6 @@ body {
   font-size: 12px;
   line-height: 1.1666666667;
   transition: background-color 0.5s ease 0s, box-shadow 0.5s ease 0s;
-  transition: box-shadow 0.5s ease 0s, box-shadow 0.5s ease 0s;
 }
 @media screen and (min-width: 768px) {
   .textarea_form {
@@ -1122,8 +1122,9 @@ body {
   width: 100%;
   height: 100%;
   background: #d9d9d9;
-  display: none;
+  overflow: hidden;
   z-index: 1000;
+  backface-visibility: hidden;
   border: none;
   box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.5);
 }
