@@ -4,7 +4,7 @@
   width: 100%;
   background-color: #000000;
   border-bottom: 1px solid #ffffff;
-  animation: showHeader 900ms ease-in-out forwards;
+  animation: showHeader 500ms ease-in-out forwards;
   z-index: 9999;
 }
 
@@ -30,17 +30,17 @@
     opacity: 0;
     top: 0;
     padding: 10px 10px;
-    animation: showLogo 900ms ease-in-out 400ms forwards;
+    animation: showLogo 900ms ease-in-out 500ms forwards;
   }
 
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-grow: 1;
-  opacity: 1;
+  opacity: 0;
   top: 0;
   padding: 10px 20px;
-  animation: showLogo 900ms ease-in-out forwards;
+  animation: showLogo 900ms ease-in-out 500ms forwards;
 
   @include table {
     padding: 15px 30px;
