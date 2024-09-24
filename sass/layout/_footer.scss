@@ -49,6 +49,8 @@
   border-radius: 20px;
   overflow: hidden;
   transition: transform 0.5s ease;
+  margin-right: auto;
+  margin-left: auto;
 
   &_submit {
     transform: perspective(600px) rotateY(180deg);
@@ -59,6 +61,10 @@
     padding: 20px;
   }
 
+  @include desktop {
+    margin-right: 0;
+    margin-left: 0;
+  }
 
 }
 
@@ -202,11 +208,16 @@
   line-height: calc(24 / 18);
   color: #ffffff;
   margin-bottom: 30px;
+  text-decoration: none;
 
   @include table {
     font-size: 40px;
     line-height: calc(49 / 40);
   }
+}
+
+.footer-contacts-mail {
+  text-shadow: rgb(128, 128, 128) 3px 1px 5px;
 }
 
 .footer-contacts-mail:hover,

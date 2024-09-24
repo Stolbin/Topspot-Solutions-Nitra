@@ -1,5 +1,5 @@
 body {
-  background-color: #000000;
+  background-color: #100f0f;
 }
 
 *,
@@ -129,7 +129,7 @@ body {
   background-color: rgba(157, 210, 25, 0.3);
   border-radius: 50px;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: all 0.5s ease;
 }
 @media screen and (min-width: 768px) {
   .scrolltop {
@@ -158,6 +158,7 @@ body {
 }
 .top_btn:hover > .bi {
   color: #320404;
+  transition: color 0.5s ease;
 }
 @media screen and (min-width: 768px) {
   .top_btn {
@@ -175,6 +176,7 @@ body {
   fill: currentColor;
   width: 10px;
   height: 10px;
+  transition: color 0.5s ease;
 }
 @media screen and (min-width: 768px) {
   .bi {
@@ -308,6 +310,7 @@ body {
   color: #ffffff;
   padding-left: 5px;
   padding-bottom: 5px;
+  transition: text-shadow 0.8s ease;
 }
 @media screen and (min-width: 768px) {
   .header-link {
@@ -325,12 +328,13 @@ body {
   }
 }
 .header-link span {
-  transition: color 0.5s ease 0s;
+  transition: color 0.5s ease;
   display: block;
 }
 .header-link:hover, .header-link:focus {
   color: #faebd7;
   text-shadow: 0px 0px 20px #e9e6e2, 0px 0px 30px #e9e6e2, 0px 0px 40px #e9e6e2;
+  transition: color 0.8s ease, text-shadow 0.8s ease;
 }
 .header-link::after {
   position: absolute;
@@ -891,6 +895,8 @@ body {
   border-radius: 20px;
   overflow: hidden;
   transition: transform 0.5s ease;
+  margin-right: auto;
+  margin-left: auto;
 }
 .footer-form_submit {
   transform: perspective(600px) rotateY(180deg);
@@ -899,6 +905,12 @@ body {
   .footer-form {
     max-width: 535px;
     padding: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -1051,6 +1063,7 @@ body {
   line-height: 1.3333333333;
   color: #ffffff;
   margin-bottom: 30px;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .footer-contacts-text,
@@ -1058,6 +1071,10 @@ body {
     font-size: 40px;
     line-height: 1.225;
   }
+}
+
+.footer-contacts-mail {
+  text-shadow: rgb(128, 128, 128) 3px 1px 5px;
 }
 
 .footer-contacts-mail:hover,
